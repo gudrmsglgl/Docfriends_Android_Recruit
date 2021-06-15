@@ -5,6 +5,8 @@ import Versions
 object Dependencies {
     // Android
     const val lifecycle_runtime = "androidx.lifecycle:lifecycle-runtime:${Versions.lifecycleVersion}"
+    const val navigation_fragment_ktx = "androidx.navigation:navigation-fragment-ktx:${Versions.navVersion}"
+    const val navigation_ui_ktx = "androidx.navigation:navigation-ui-ktx:${Versions.navVersion}"
     const val livedata_ktx = "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.lifecycleVersion}"
     const val viewmodel_ktx = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycleVersion}"
 

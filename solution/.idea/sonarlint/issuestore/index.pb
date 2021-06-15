@@ -1,8 +1,6 @@
 
 h
 8app/src/main/java/com/docfriends/medical/MainActivity.kt,8/9/897301f5876316edd6fe17dac74f8aedd73744a7
-Y
-)app/src/main/res/layout/activity_main.xml,7/6/76b07e40f24cce093536731477540f12e7da3cb6
 c
 3buildSrc/src/main/java/dependencies/Dependencies.kt,e/2/e2fa8acdb85335e67c5e7b027e9845ac136ef6c7
 g

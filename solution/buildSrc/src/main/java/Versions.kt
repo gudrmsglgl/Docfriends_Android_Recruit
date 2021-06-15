@@ -1,6 +1,8 @@
 object Versions {
     // Android
     const val lifecycleVersion = "2.3.1"
+    const val navVersion = "2.3.5"
+
 
     // Lib
     const val daggerVersion = "2.36"
