@@ -1,0 +1,35 @@
+import dependencies.Dependencies
+import dependencies.TestDependencies
+
+plugins {
+    id 'java-library'
+    id 'kotlin'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    implementation Dependencies.rxJava
+    implementation Dependencies.rxKotlin
+    implementation Dependencies.javaxAnnotation
+    implementation Dependencies.javaxInject
+
+    testImplementation TestDependencies.junit4
+    testImplementation TestDependencies.hamcrest_library
+    testImplementation TestDependencies.jupiter_api
+    testImplementation TestDependencies.jupiter_params
+    testRuntimeOnly    TestDependencies.jupiter_engine
+    testImplementation TestDependencies.mockk
+
+}
